@@ -1,0 +1,36 @@
+{
+  "name": "uptask",
+  "version": "0.0.1",
+  "description": "Administrador de Tareas",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlelos/UpTask.git"
+  },
+  "keywords": [
+    "node",
+    "MVC",
+    "Task"
+  ],
+  "author": "Lucero Sergio Alejandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htmlelos/UpTask/issues"
+  },
+  "homepage": "https://github.com/htmlelos/UpTask#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "mysql2": "^2.2.5",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.2",
+    "shortid": "^2.2.16",
+    "slug": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
