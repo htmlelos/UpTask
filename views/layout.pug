@@ -5,6 +5,10 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     link(rel="stylesheet", href="/css/normalize.css")
+    link(rel="preconnect" href="https://fonts.gstatic.com/%22")
+    link(href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet")
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.15.3/css/all.css' integrity='sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk' crossorigin='anonymous')    
+    
     link(rel="stylesheet", href="/css/app.css")
     title #{nombrePagina}
   body
@@ -14,7 +18,7 @@ html(lang="en")
     main.contenedor
       aside.contenedor-proyectos
         .panel.crear-proyecto
-          a(href="/nuevo-proyecto", class="boton") Proyecto
+          a(href="/nuevo-proyecto" class="boton") Nuevo Proyecto
             span +
         .panel.lista-proyectos
           h2 Proyectos
@@ -27,4 +31,4 @@ html(lang="en")
       block contenido
 
       //- pre= vardump(proyectos)
-
+    script(src="/dist/bundle.js") 
