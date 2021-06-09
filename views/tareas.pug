@@ -15,7 +15,7 @@ block contenido
       ul
         if tareas.length
           each tarea in tareas
-            li.tarea
+            li.tarea(data-tarea=tarea.id)
               p= tarea.tarea
               .acciones
                 if tarea.estado
@@ -25,7 +25,14 @@ block contenido
                 i.fas.fa-trash
         else
           p No hay tareas en este proyecto
+
     //- pre= vardump(tareas)
+
+    // Avance del proyecto
+    .avance
+      h2 Avance del Proyecto
+        #barra-avance.barra-avance
+          #porcentaje.porcentaje
 
     // Acciones que se pueden realizar
     .contenedor-acciones
