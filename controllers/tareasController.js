@@ -40,13 +40,12 @@ exports.cambiarEstadoTarea = async (req, res) => {
 };
 
 exports.eliminarTarea = async (req, res) => {
-  
-  const {id }= req.params;
+  const { id } = req.params;
 
   // Eliminar la tarea
-  const resultado = await Tareas.destroy({where: {id}})
+  const resultado = await Tareas.destroy({ where: { id } });
 
-  if (!resultado) return next()
+  if (!resultado) return next();
 
   res.status(200).send('Tarea Eliminada Correctamente');
-}
+};
