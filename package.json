@@ -4,10 +4,10 @@
   "description": "Administrador de Tareas",
   "main": "index.js",
   "scripts": {
-    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
-    "dev": "nodemon ./index.js",
     "start": "node ./index.js",
-    "watch": "webpack -w --mode development"
+    "dev": "nodemon ./index.js",
+    "watch": "webpack -w --mode development",
+    "desa": "concurrently \"npm run dev\" \"npm run watch\""
   },
   "repository": {
     "type": "git",
