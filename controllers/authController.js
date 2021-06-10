@@ -1,9 +1,9 @@
 const passport = require('passport');
-const Usuarios = require('../models/Usuarios');
 const crypto = require('crypto');
 const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const bcrypt = require('bcrypt-nodejs');
+const Usuarios = require('../models/Usuarios');
 const enviarEmail = require('../handlers/email');
 
 exports.autenticarUsuario = passport.authenticate('local', {
